@@ -7,6 +7,6 @@ USER root
 
 RUN apt update && apt upgrade -y
 RUN apt install python3-pip -y
-RUN pip install -U openai-whisper
+RUN su -c kasm-user pip install -U openai-whisper
 RUN apt update && apt install ffmpeg -y
-RUN pip install setuptools-rust
+RUN su -c kasm-user pip install setuptools-rust
