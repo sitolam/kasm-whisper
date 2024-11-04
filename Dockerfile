@@ -1,4 +1,4 @@
-FROM kasmweb/ubuntu-focal-desktop:1.15.0
+FROM kasmweb/ubuntu-jammy-dind:1.15.0
 
 ENV HOME /home/kasm-user
 WORKDIR $HOME
